@@ -1,0 +1,54 @@
+# Site settings
+title: Expandia
+email: hello@expandia.co
+description: Expandia | Website, branding and marketing extraordinaires in Torbay, UK.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://expandia.co" # the base hostname & protocol for your site
+twitter_username: expandiaco
+github_username:  expandia
+
+# Build settings
+markdown: kramdown
+
+# Allow the use of _pages
+include: ['_pages']
+
+# Ignore stuff
+exclude: ['img/svg', 'grunt/', 'node_modules/', 'bower_components', 'CNAME', 'borwer.json', 'grunt/', 'Gruntfile.js', 'package.json']
+
+# Dynamic Page Generator
+# page_gen: 
+#   - data: work
+#     template: work
+#     name: title
+#     dir: work
+#   - data: services
+#     template: services
+#     name: slug
+#     dir: our-services
+
+# Custom Globals
+legal-name: Expandia Ltd
+
+address__1: 58 Pilmuir Ave
+address__2:
+city: Torquay
+county: Devon
+country: UK
+post-code: TQ2 6AJ
+
+phone__1: +44 (0)1392 581153
+phone__2: +44 (0)7772 761786
+
+about:
+  - Expandia are Sam Squire and Grace Eley.<br>A left-brain, right-brain team who also happen to be in love.
+  - Using a combination on creativity and logic, we are able and excited to tackle any task. We have a combined experience of over 15 years. We love what we do and we're happy to work in such an exciting, fast-paced and thriving industry.
+  - Occasionally found on the road in the UK, Europe and beyond,  we are able to work remotely whilst still maintaining the same level of service we would expect when engaging the services of any professional company.
+
+# SEO
+seoTitle: Expandia - Bespoke Web Design & Development in Torbay, UK
+seoDescription: We are a web design and development team based in Torbay, UK offering digital marketing, social media marketing, website optimisation and maintenance.
+
+# Plugins
+gems:
+  - jekyll-sitemap

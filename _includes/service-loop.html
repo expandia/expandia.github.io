@@ -1,0 +1,12 @@
+{% for service in site.data.services %}
+	{% if service.title == page.title %}
+		{% for stage in service.process %}
+			<div class="service-page__service service-page__service--{{ forloop.index }}">
+				<h3 class="service-page__title global__title global__title--c"><span class="service-page__title-count">{{ forloop.index }}.</span> {{ stage.title }}</h1>
+				{% for p in stage.description %}
+					<p class="service-page__body">{{ p }}</p>
+				{% endfor %}
+			</div>
+		{% endfor %}
+	{% endif %}
+{% endfor %}

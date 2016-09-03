@@ -1,0 +1,53 @@
+* {
+    font: inherit;
+
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+    text-decoration: none;
+
+    -webkit-padding-start: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    box-sizing: border-box;
+
+    background-color: $base__bg-color;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+
+    border: 0;
+}
+
+b,
+strong,
+.bold {
+    font-weight: 700;
+}
+
+address {
+    font-style: normal;
+}
+
+svg {
+    fill: $color__primary;
+}
+
+svg path,
+svg g {
+    fill: currentColor;
+}

@@ -1,0 +1,92 @@
+-
+  title: Website Design &amp; Development
+  description: From business websites to online shops, mobile or web-apps and beyond. Our professional, experienced team are capable and excited to take on your project, whatever the size, style or genre.
+  slug: website-design-and-development
+  process:
+    -
+      title: Initial Contact
+      description:
+        - Whether it’s by phone, email or carrier-pigeon we’re always happy to hear from you.
+        - We love to chat about the web as much as we love to work on it. We’re always around for a quick informal chat or an in-depth discussion on the latest techy-coolness.
+    -
+      title: Our Suggestions & Your Quote
+      description: Once we’ve understood the project we’ll supply you with a quote, along with our suggestions on how the project should be approached.
+    -
+      title: Planning Time
+      description:
+        - Next up it’s time for a much more in-depth chat. By the end of this meeting, we aim to understand nearly as much as you do about your business; it’s past, present, future and it’s goals.
+        - A big part of this stage is for us to understand your key focus for the website. If you’re an online shop then sales may be your focus, if you’re a business site, maybe it’s leads you’re looking for.
+        - This focus becomes our everything when approach the layout, design and development of your website. Your website needs to do what it’s supposed to do and only by creating a truly bespoke website can we acheive this.
+    -
+      title: Architecture & Layout
+      description:
+        - Using all of the knowledge we gained in our planning-meeting it’s time to decide what goes where.
+        - This can mean “where does the contact form go?” but can also mean “how do we lay out the homepage to ensure as many users as possible fill in the contact form?”.
+        - Because we strictly use our own code that ‘s been hand crafted in-house, we have the freedom to design a website that will actually acheive your goals. Something a templated website will always struggle to do.
+        - “One-size does not fit all.”
+    -
+      title: Style
+      description:
+        - Once we’re happy with the layout, we’ll then concentrate on style. 
+        - A unique style can make your website stand out from your competitors. 
+        - Already have a visual style? Want to impliment the colours or fonts from you logo? No problem. We’re happy to work with existing styles to create a website that is unique, yet fitting to your brand.
+    -
+      title: Development
+      description:
+        - Once we have the style in-place, it’s time to get geeky.
+        - Your website will be coded from scratch by our in-house team. We strive to stay up to date with the fast changing internet world. This means using the latest tools and technologies to ensure your website is fast, responsive and compliant with all of the guidelines should adhere to. 
+        - This includes Google. We’ll optimise your site from the ground up to give you a good standing in your SEO, too.
+    -
+      title: Presentation
+      description:
+        - It’s time to see your (nearly) finished webiste!
+        - At this stage we’ll send you a private link to your website and ask you for your final changes before the website goes live for all the world to see.
+    -
+      title: Go Live!
+      description:
+        - When we’re happy and most importantly you’re happy, we’ll work together with your domain provider to push your website live.
+        - At this stage we’re happy to discuss any digital marketing requirements you may have to ensure your new website gets the visitors it deserves.
+-
+  title: Digital Marketing
+  description: Need more traffic to your website? Struggling on social media? Not quite hitting the mark on Google? Expandia can help with website traffic, social media success, search engine listings and more.
+  slug: digital-marketing
+  tools:
+    -
+      title: SEO
+      img: img
+      description: | 
+        Lorem ipsum dolor sit amet, laoreet mauris consectetuer nisl quis est erat, augue hendrerit. Porta diam, interdum tellus arcu blandit. Vel vel rutrum felis euismod.
+    -
+      title: Social Media Marketing
+      img: img
+      description: | 
+        Lorem ipsum dolor sit amet, laoreet mauris consectetuer nisl quis est erat, augue hendrerit. Porta diam, interdum tellus arcu blandit. Vel vel rutrum felis euismod.
+    -
+      title: Content Marketing & Blogging
+      img: img
+      description: | 
+        Lorem ipsum dolor sit amet, laoreet mauris consectetuer nisl quis est erat, augue hendrerit. Porta diam, interdum tellus arcu blandit. Vel vel rutrum felis euismod.
+  approach:
+    -
+      title: A Single Point of Contact
+      description: 
+        - Here at Expandia we do our best to keep everything under one roof. 
+        - Within our monthly packages we can help with, or take complete control of, your; online strategy, social-media, email marketing, blogging, content marketing, website optimisation, and more.
+      img: img
+    -
+      title: A Bespoke Online Strategy
+      description:
+        - There’s no such thing as a “one size fits all” approach when it comes to digital marketing. Generally speaking though, most businesses are looking for similar results from their website. Whether it’s sales on your online store, leads from your business page or downloads of your content, we can help.
+        - In our experience, the succes of any digital marketing strategy is - a clear, tangeable objective. If your aim is to acheive, for example, sales then your entire strategy should focus on… you guessed it, sales.
+        - We will design you a digital marketing strategy that acheives your objectives by default. Success online is just a fomula and formulas can be written.
+      img: img
+    -
+      title: The Proof Is In The Pudding
+      description:
+        - We also ensure you see the value in your spend by providing an easy to understand, monthly report showing you exactly how your money has been spent and more importantly, the results it has acheived.
+        - We’ll email you this report with your monthly invoice so that you can see exactly what your’re paying for. This is our way of showing our transparency and honesty.
+      img: img
+-
+  title: Website Optimisation &amp; Maintenance
+  description: If you're getting traffic but struggling with sales or leads, we can help. We're problem solvers at heart and if your website has a problem, we'd love to help you solve it.
+  slug: website-optimisation-and-maintenance

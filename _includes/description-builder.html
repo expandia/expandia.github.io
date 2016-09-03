@@ -1,0 +1,25 @@
+{% capture workDescription %}
+	{% for work in site.data.work %}
+		{% if work.title == page.title %}
+			{{ work.description }}
+		{% endif %}
+	{% endfor %}
+{% endcapture %}
+
+{% capture serviceDescription %}
+	{% for service in site.data.services %}
+		{% if service.title == page.title %}
+			{{ service.description }}
+		{% endif %}
+	{% endfor %}
+{% endcapture %}
+
+{% if page.title == site.title %}
+	{{ site.seoDescription | truncate: 160 }}
+{% elsif page.title != site.title and page.url contains 'work' %}
+	{{ workDescription | truncate: 160 }}
+{% elsif page.title != site.title and page.url contains 'service' %}
+	{{ serviceDescription | truncate: 160 }}
+{% else %}
+	{{ page.description | truncate: 160 }}
+{% endif %}

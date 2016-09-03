@@ -1,0 +1,80 @@
+{% if page.title != "Thanks" %}
+	{% include pre-footer.html %}
+{% endif %}
+
+<footer class="footer">
+	<div class="footer__bulker">
+		<div class="footer__container">
+			
+
+			<div class="footer__left">
+				<a href="{{ site.url }}">
+					<svg class="footer__logo">
+						<use xlink:href="#svg-expandia__logo" />
+					</svg>
+				</a>
+				<div class="footer__social-icons-container">
+					<a href="//facebook.com/expandiaco/">
+						<svg class="footer__social-icon footer__social-icon--facebook" viewbox="0 0 25 25">
+							<use xlink:href="#svg-expandia__social-icon--facebook" x="0" y="0"/>
+						</svg>
+					</a>
+					<a href="//twitter.com/expandiaco">
+						<svg class="footer__social-icon footer__social-icon--twitter" viewbox="0 0 25 25">
+							<use xlink:href="#svg-expandia__social-icon--twitter" x="0" y="0"/>
+						</svg>
+					</a>
+					<a href="//plus.google.com/+ExpandiaWebDesign">
+						<svg class="footer__social-icon footer__social-icon--google-plus"viewbox="0 0 25 25">
+							<use  xlink:href="#svg-expandia__social-icon--google-plus" x="0" y="0"/
+						</a>>
+						</svg>
+					<a href="//instagram.com/expandiaco/">
+						<svg class="footer__social-icon footer__social-icon--instagram" viewbox="0 0 25 25">
+							<use xlink:href="#svg-expandia__social-logo--instagram" x="0" y="0"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__right">
+				<div class="footer-right__column footer-right__column--1">
+					<h5 class="footer-right__title">Quick Links</h5>
+					{% for page in site.pages %}
+						{% unless page.url contains "work" or page.url contains "404" or page.url contains "thanks" %}
+							<a class="footer-right__link" href="{{ page.url }}">{{ page.title }}</a>
+						{% endunless %}
+					{% endfor %}
+				</div>
+				<div class="footer-right__column footer-right__column--2">
+					<h5 class="footer-right__title">Contact Us</h5>
+					<address class="footer-right__body">
+						{% if site.legal-name %}{{ site.legal-name }}<br>{% endif %}
+						{% if site.address__1 %}{{ site.address__1 }},<br>{% endif %}
+						{% if site.city %}{{ site.city }}, <br>{% endif %}
+						{% if site.county %}{{ site.county }}, {% endif %}{% if site.country %}{{ site.country }}<br>{% endif %}
+						{% if site.post-code %}{{ site.post-code }}{% endif %}
+					</address>
+				</div>
+				<div class="footer-right__column footer-right__column--3">
+					<h5 class="footer-right__title">Get In Touch</h5>
+					<a class="footer-right__link" href="tel:{{ site.phone__1 | replace: ' ', ''}}">{{ site.phone__1 }}</a>
+					<a class="footer-right__link" href="tel:{{ site.phone__2 | replace: ' ', ''}}">{{ site.phone__2 }}</a>
+					<br>
+					<a class="footer-right__link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer__copyright">
+		<p class="footer-copyright__body">Copyright &copy; {{ 'now' | date: '%Y' }} - Expandia Ltd</p>
+		<div class="footer-copyright__right">
+			<p class="footer-copyright__body footer-copyright__made-by">Website made in-house at</p>
+			<svg class="footer-copyright__logo">
+				<use xlink:href="#svg-expandia__logo" />
+			</svg>
+		</div>
+	</div>
+	
+</footer>

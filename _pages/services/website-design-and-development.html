@@ -1,0 +1,52 @@
+---
+layout: default
+title: Website Design &amp; Development
+permalink: /our-services/website-design-and-development
+---
+{% for service in site.data.services %}
+	{% if service.title == page.title %}
+
+		<div class="hero wdd-page__hero">
+			<div class="hero__content">
+				<h5 class="global__sub global__sub--c">Our Approach On</h5>
+				<h2 class="global__title global__title--c wdd-page__title">{{ page.title }}</h2>
+				<p class="wdd-page__intro">{{ service.description }}</p>
+			</div>
+		</div>
+
+		<div class="wdd__container">
+			<h3 class="global__title global__title--c">Our Process</h3>
+			<p class="text-center"><b>Pro tip -</b> Click a box to extend it's contents.</p>
+			<svg class="wdd__container-title-svg">
+				<use xlink:href="#svg-expandia__dash-icon" />
+			</svg>
+
+			<div class="wdd__content-container">
+			
+				{% for stage in service.process %}
+					<div class="wdd-page-loop__service wdd-page-loop__service--{{ forloop.index }}">
+						<div class="wdd-page-loop__top">
+							<h4 class="wdd-page-loop__title global__title">
+								<span class="wdd-page-loop__title--count">{{ forloop.index }}.</span>
+								{{ stage.title }}
+							</h4>
+							<span class="wdd-page-loop__title-icon">+</span>
+						</div>
+
+						<div class="wdd-page-loop__bottom closed">
+						{% for p in stage.description %}
+								<p class="wdd-page-loop__body">{{ p }}</p>
+						{% endfor %}
+						<p class="wdd-page-loop__body wdd-page-loop__cta bold">Heard enough?</p>
+						<p class="wdd-page-loop__body">How about we
+						<a class="bold underline" href="{{ site.url }}/contact-us">get the ball rolling</a> on your project now?</p>
+						</div>
+					
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+
+	{% endif %}
+{% endfor %}

@@ -1,0 +1,230 @@
+// ---------------------
+// Layout
+// ---------------------
+.dm-page__hero {
+    padding: 10rem 10%;
+
+    box-shadow: $shadow__t;
+}
+.dm-page-tools__container {
+    padding: 8rem 0;
+
+    background-color: $color__primary;
+    box-shadow: $shadow__b;
+
+    @include oversized;
+    @include b(m) {
+        padding: 7rem;
+    }
+    @include b(s) {
+        padding: 5rem;
+    }
+}
+
+// ---------------------
+// Loop
+// ---------------------
+.dm-page__loop-container {
+    display: flex;
+
+    max-width: 62rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    align-items: center;
+    justify-content: center;
+    @include b(m) {
+        display: block;
+    }
+}
+.dm-page__tool {
+    width: 33%;
+    margin-right: 4.7rem;
+
+    @include b(m) {
+        display: block;
+
+        width: 100%;
+        margin-right: 0;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-left: auto;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+// ---------------------
+// Text
+// ---------------------
+.dm-page-tool__title {
+    max-width: 11rem;
+
+    color: $color__black;
+
+    @include b(m) {
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+.dm-page-tool__body {
+    max-width: 15rem;
+
+    color: $color__black;
+
+    @include b(m) {
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+
+// ---------------------
+// Approach - Layout
+// ---------------------
+.dm-page-approach-section__container {
+    background-color: $color__black;
+    box-shadow: $shadow__t-b;
+
+    @include b(m) {
+        padding: 5rem 0;
+
+        box-shadow: none;
+    }
+}
+.dm-page-approach__row {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50%;
+    @include b(m) {
+        display: block;
+    }
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+        .dm-page-approach__right {
+            display: flex;
+
+            align-items: center;
+        }
+        .dm-page-approach__title,
+        .dm-page-approach__sub,
+        .dm-page-approach__body {
+            margin-left: auto;
+
+            text-align: right;
+
+            @include b(m) {
+                text-align: center;
+            }
+        }
+    }
+    &:first-of-type {
+        p {
+            max-width: 20rem;
+        }
+    }
+}
+.dm-page-approach__left,
+.dm-page-approach__right {
+    width: 50%;
+    height: em(512px);
+
+    @include b(m) {
+        width: 100%;
+        height: auto;
+    }
+}
+.dm-page-approach__left {
+    @include b(m) {
+        display: none;
+    }
+}
+
+.dm-page-approach__img {
+    width: 100%;
+}
+
+.dm-page-approach__right {
+    display: flex;
+    flex-direction: column;
+
+    padding: 3rem;
+
+    align-items: center;
+    justify-content: center;
+    @include b(m) {
+        margin-bottom: 2rem;
+        padding: 0 10%;
+    }
+}
+
+// ---------------------
+// Approach - Text
+// ---------------------
+.dm-page-approach__title {
+    @include b(m) {
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+        &:after {
+            display: block;
+
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+.dm-page-approach__sub {
+    @include b(m) {
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+.dm-page-approach__body {
+    max-width: 23rem;
+
+    @include b(m) {
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center !important;
+    }
+}
+.dm-page__signoff {
+    z-index: 999;
+
+    padding: 7rem 5% 5rem 5%;
+
+    background-color: $color__primary;
+    box-shadow: $shadow__t;
+
+    @include oversized;
+    @include b(m) {
+        box-shadow: none;
+    }
+}
+.dm-page__signoff-body,
+.dm-page__signoff-title {
+    text-align: center;
+
+    color: $color__black;
+}
+.dm-page__signoff-body {
+    margin-bottom: 0;
+}

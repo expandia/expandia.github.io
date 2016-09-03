@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+	{% include svg-defs.svg %}
+
+	<body>
+			{% include side-menu.html %}
+			{% include header.html %}
+		<div class="entire-site">
+			{{ content }}
+			{% include footer.html %}
+		</div>
+
+	</body>
+	{% include footer__scripts.html %}
+</html>

@@ -1,0 +1,16 @@
+{% for category in project.categories %}
+	
+	{% if forloop.length != 1 %}
+
+		{% if forloop.last == true %}
+			{{ category }}
+		{% else %}
+			{{ category | append: " | " }}
+		{% endif %}
+	
+	{% else %}
+		{{ category }}
+	{% endif %}
+
+
+{% endfor %}

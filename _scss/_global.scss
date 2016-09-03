@@ -1,0 +1,55 @@
+// ---------------------
+// Text
+// ---------------------
+.global__sub {
+    &--c {
+        text-align: center;
+    }
+}
+.global__title {
+    margin-top: 0;
+    &__after {
+        display: block;
+
+        width: 1.5rem;
+        height: .5rem;
+        margin-bottom: 1rem;
+
+        fill: $color__primary;
+    }
+    &--c {
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+        &__after {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+.more {
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+    &__after {
+        width: em(10px);
+        height: em(10px);
+        margin-left: .8rem;
+
+        fill: currentColor;
+    }
+    &--c {
+        display: flex;
+
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 1rem;
+
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,82 @@
+// ---------------------
+// Layout
+// ---------------------
+.about-page__hero {
+    padding: 10rem 5%;
+}
+
+.about-page__hero-content {
+    width: em(720px);
+
+    @include b(m) {
+        max-width: 100%;
+    }
+}
+
+// ---------------------
+// Text
+// ---------------------
+.about-page__body {
+    max-width: 28rem;
+}
+
+// ---------------------
+// Staff Section
+// ---------------------
+.staff {
+    display: flex;
+
+    @include b(s) {
+        flex-direction: column;
+    }
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        @include b(s) {
+            flex-direction: column;
+        }
+    }
+}
+.staff__left {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: em(512px);
+
+    background-color: $color__black;
+
+    @include b(m) {
+        height: auto;
+        padding: 3rem 5%;
+    }
+    @include b(s) {
+        width: 100%;
+    }
+    align-items: center;
+    justify-content: center;
+}
+.staff__left-container {
+    max-width: em(247px);
+}
+.staff__right {
+    display: flex;
+
+    width: 50%;
+    height: em(512px);
+
+    @include b(m) {
+        height: auto;
+    }
+    align-items: center;
+    justify-content: center;
+    @include b(s) {
+        width: 100%;
+        height: auto;
+    }
+}
+.staff__img {
+    @include b(s) {
+        max-width: 20rem;
+    }
+}

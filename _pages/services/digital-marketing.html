@@ -1,0 +1,56 @@
+---
+layout: default
+title: Digital Marketing
+permalink: /our-services/digital-marketing
+---
+{% for service in site.data.services %}
+	{% if service.title == page.title %}
+
+		<div class="hero dm-page__hero">
+			<div class="hero__content">
+				<h5 class="global__sub global__sub--c">A little more on</h5>
+				<h2 class="global__title global__title--c wdd-page__title">{{ page.title }}</h2>
+				<p class="wdd-page__intro">{{ service.description }}</p>
+			</div>
+		</div>
+
+		<div class="dm-page-tools__container">
+			<div class="dm-page__loop-container">
+				{% for tool in service.tools %}
+					<div class="dm-page__tool">
+						<h4 class="dm-page-tool__title global__title">{{ tool.title }}</h4>
+						<p class="dm-page-tool__body">{{ tool.description }}</p>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="dm-page-approach-section__container">
+				
+			<div class="dm-page-approach-loop__container">
+				{% for approach in service.approach %}
+					<div class="dm-page-approach__row">
+						<div class="dm-page-approach__left">
+							<img class="dm-page-approach__img" src="{{ site.url }}/img/dist/digital-marketing/expandia__approach-img--{{ forloop.index }}.jpg" alt="Expandia - {{ approach.title }}" class="dm-page-approach__img">
+						</div>
+						<div class="dm-page-approach__right">
+							<div class="dm-page-approach__right-container">
+								<h4 class="dm-page-approach__title global__title">{{ approach.title }}</h4>
+								{% for p in approach.description %}
+									<p class="dm-page-approach__body">{{ p }}</p>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="dm-page__signoff">
+			<h3 class="global__title dm-page__signoff-title">We'd love to hear from you.</h3>
+			<p class="text-center dm-page__signoff-body">Why not <a class="dm-page__signoff-body bold" href="{{ site.url }}/contact-us">contact us</a> now about how we can help with your digital marketing?</p>
+			<div class="text-center class="dm-page__signoff-body">We're looking forward to hearing from you!</div>
+		</div>
+
+	{% endif %}
+{% endfor %}

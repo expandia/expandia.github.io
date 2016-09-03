@@ -1,0 +1,36 @@
+// ---------------------
+// Header
+// ---------------------
+.header {
+    position: relative;
+
+    max-width: $site__width;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: $color__black;
+}
+// ---------------------
+// Nav
+// ---------------------
+.nav {
+    display: flex;
+
+    padding: 2rem 5%;
+
+    @include b(m) {
+        padding: 1rem 5%;
+    }
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo {
+    width: em(25px);
+    height: em(25px);
+}
+.nav__side-menu-opener {
+    width: em(15px);
+    height: em(12px);
+
+    cursor: pointer;
+}

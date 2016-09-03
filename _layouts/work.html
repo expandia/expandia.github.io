@@ -1,0 +1,56 @@
+---
+layout: default
+---
+{% for client in site.data.work %}
+	{% if client.title == page.title %}
+		<div class="work-page__container">
+
+			<div class="work-page__top-container">
+
+				<div class="work-page__left">
+					{% if client.img %}
+						{% include expandia__work-img--about.svg %}
+					{% endif %}
+				</div>
+
+				<div class="work-page__right">
+					{% if client.title %}
+						<h2 class="work-page__title">{{ client.title }}</h2>
+					{% endif %}
+					
+					{% if client.categories %}
+						<div class="work-page__categories-container">
+							{% for category in client.categories %}
+								<p class="work-page__category">{{ category }}</p>
+							{% endfor %}
+						</div>
+					{% endif %}
+				</div>
+
+			</div>
+
+			{% if client.description %}
+				<div class="work-page__description-container">
+					<p class="work-page__description">{{ client.description }}</p>
+				</div>
+			{% endif %}
+
+			
+			{% for study in client.studies %}
+				<div class="study">
+					<div class="study__left">
+						<img class="study__left-img" src="{{ site.url }}/img/dist/work/studies/{{ study.img }}" alt="">
+					</div>
+					<div class="study__right">
+						<div class="study__right-container">
+							<h4 class="study__right-title">{{ study.title }}</h4>
+							{% for p in study.description %}
+								<p class="study__right-body">{{ p }}</p>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+{% endfor %}

@@ -1,0 +1,63 @@
+---
+layout: default
+title: Website Optimisation &amp; Maintenance
+permalink: /our-services/website-optimisation-and-maintenance
+---
+{% for service in site.data.services %}
+	{% if service.title == page.title %}
+
+		<div class="hero wom-page__hero">
+			<div class="hero__content">
+				<h2 class="global__title global__title--c wom-page__title">{{ page.title }}</h2>
+				<p class="wdd-page__intro">{{ service.description }}</p>
+			</div>
+		</div>
+
+		<div class="wom-page__modules-container">
+			
+			<div class="wom-page__module">
+				<div class="wom-page__module-left">
+					<h3 class="global__title wom-page__module-title">Data Driven Decisions</h3>
+				</div>
+				<div class="wom-page__module-right">
+					<p class="global__body wom-page__module-body bold">What are data driven decisions?</p>
+					<p class="global__body wom-page__module-body">Whether it's optimisation or maintenance, the decisions you make on your website should be based on data.</p>
+					<p class="global__body wom-page__module-body">Expandia can help you setup your website to collect the data you need then use this data to make assessed decisions on how to move forward. We're firm believers in logic and rationale, yes we're creative too but when it comes to optimisation and maintenance, data is king.</p>
+					<p class="global__body wom-page__module-body bold">So, what do we mean by data?</p>
+					<p class="global__body wom-page__module-body">Using a package like Google Analytics, we can help you track who your visitors are, demographics like age, g wom-page__module-titleender, location and more, which pages your users visit, which pages they don't, how long they stay on your site and a whole host more.</p>
+					<p class="global__body wom-page__module-body bold">Why is this data important?</p>
+					<p class="global__body wom-page__module-body">Let's say you're struggling with getting your visitors to convert to leads. Chances are, the solution to this problem will be starting you in the face when you analyse this data. That's where we can help. Not only can we setup the data tracking for you, we can help you analyse it and then make the necessary changes to solve the problems you're facing.</p>
+				</div>
+			</div>
+
+			<div class="wom-page__module">
+				<div class="wom-page__module-left">
+					<h3 class="global__title wom-page__module-title">Website Optimisation</h3>
+				</div>
+				<div class="wom-page__module-right">
+					<p class="global__body wom-page__module-body bold">What's it all about?</p>
+					<p class="global__body wom-page__module-body">After having set your website up to track the data e need, if it hasn't already been done, we're ready to start analysing and making decisions. Decisions on your website should always be made with your goal in mind. If your goal is to generate more leads or sales, then we'll analyse your data with sales and leads in mind. We'll then compile a list of suggestions on how we could alter your website to focus more on your goal.</p>
+					<p class="global__body wom-page__module-body bold">How does it work?</p>
+					<p class="wom-page__module-body">We're also ready to make these changes for you if you'd prefer us to. We're handy in most frameworks, content management systems and e-commerce platforms so no matter who built your website, we can help.</p>
+				</div>
+			</div>
+
+			<div class="wom-page__module">
+				<div class="wom-page__module-left">
+					<h3 class="global__title wom-page__module-title">Website Maintenance</h3>
+				</div>
+				<div class="wom-page__module-right">
+					<div>
+						<p class="global__body wom-page__module-body bold">What is website maintenance?</p>
+						<p class="global__body wom-page__module-body">From simple text changes to updates and beyond, we're always happy to help you out.</p>
+						<p class="global__body wom-page__module-body">Maintaining website is our bread and butter and we'll never turn you away because a request is too small. We usually packaged website maintenance into our monthly packages so if you're a monthly customer, we'll not only make the changes you request, we'll suggest changes as well.</p>
+						<p class="global__body wom-page__module-body bold">How can I find out more?</p>
+						<p class="global__body wom-page__module-body">To find out more about becoming a monthly customer with a bespoke package tailored exactly to your needs, why not <a href="{{ site.url }}/contact-us" class="wom-page__module-body bold">contact us</a>  now? We'll be chuffed to hear from you!</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	{% endif %}
+{% endfor %}

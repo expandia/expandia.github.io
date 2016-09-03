@@ -1,0 +1,102 @@
+// --------------------------------------------------------------------------------
+// Page
+// ---------------------
+.wdd-page__hero {
+	padding: 10rem 10%;
+}
+.wdd-page__title {
+	display: block;
+
+	max-width: 15rem;
+	margin-right: auto;
+	margin-left: auto;
+
+	&--count {
+		color: $color__highlight;
+	}
+}
+.wdd-page__intro {
+	display: block;
+
+	max-width: 25rem;
+	margin-right: auto;
+	margin-left: auto;
+
+	text-align: center;
+}
+.wdd__container-title-svg {
+	width: 1.5rem;
+	height: 1rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wdd__container {
+	margin: 10rem 0;
+	@include b(m) {
+		margin: 7rem 0;
+	}
+	@include b(s) {
+		margin: 4rem 0;
+	}
+	padding: 0 5%;
+}
+
+// --------------------------------------------------------------------------------
+// Loop Layout
+// ---------------------
+.wdd__content-container {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+}
+.wdd-page-loop__service {
+	border-bottom: 1px solid $color__blue;
+}
+.wdd-page-loop__top {
+	cursor: pointer;
+	padding: 2rem;
+	background-color: $color__white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.wdd-page-loop__title-icon {
+	color: $color__black;
+	@include lh(20);
+	font-weight: 800;
+}
+.wdd-page-loop__bottom {
+	border: 1px solid $color__white;
+	overflow: hidden;
+	padding: 2rem;
+}
+
+// --------------------------------------------------------------------------------
+// Loop Text
+// ---------------------
+.wdd-page-loop__title {
+	color: $color__black;
+	margin-bottom: 0;
+}
+.wdd-page-loop__title--count {
+	color: $color__blue;
+}
+.wdd-page-loop__body {
+	@include b(s) {
+		text-align: center;
+	}
+}
+.wdd-page-loop__cta:before {
+	content: "";
+	width: 2rem;
+	height: 2px;
+	background-color: $color__white;
+	display: block;
+	margin-bottom: 1rem;
+	@include b(m) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

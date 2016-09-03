@@ -1,0 +1,16 @@
+// ---------------------
+// Entire Site
+// ---------------------
+.entire-site {
+	display: block;
+
+	max-width: $site__width;
+	margin: auto;
+
+	background-color: $color__black;
+
+	@include b(r) {
+		width: 100%;
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,86 @@
+// --------------------------------------------------------------------------------
+// WOM Page
+// ---------------------
+.wom-page__hero {
+    padding: 10rem 10%;
+}
+.wom-page__title {
+    max-width: 20rem;
+}
+// ---------------------
+// WOM Page - Modules
+// ---------------------
+.wom-page__modules-container {
+    padding: 5rem 0;
+
+    @include b(s) {
+        padding: 0;
+    }
+    @include oversized;
+}
+.wom-page__module {
+    display: flex;
+
+    margin-bottom: 2rem;
+
+    align-items: flex-start;
+    @include b(s) {
+        display: block;
+
+        margin-bottom: 0;
+    }
+}
+.wom-page__module-left {
+    display: flex;
+
+    width: 40%;
+    height: 30rem;
+    margin-top: 5%;
+
+    background-color: $color__blue;
+    box-shadow: $shadow__t-b;
+
+    @include b(s) {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 3rem 0;
+
+        box-shadow: none;
+    }
+    align-items: center;
+    justify-content: center;
+}
+.wom-page__module-right {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    height: 50rem;
+    padding: 4rem;
+
+    background-color: $color__primary;
+    box-shadow: $shadow__t-b;
+
+    @include b(s) {
+        width: 100%;
+        height: auto;
+        padding: 3rem;
+
+        box-shadow: none;
+    }
+    justify-content: center;
+}
+// ---------------------
+// WOM Page - Module Text
+// ---------------------
+.wom-page__module-title {
+    max-width: 12rem;
+
+    text-align: center;
+}
+.wom-page__module-body {
+    max-width: 25rem;
+
+    color: $color__black;
+}

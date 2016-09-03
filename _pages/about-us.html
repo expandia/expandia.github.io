@@ -1,0 +1,45 @@
+---
+layout: default
+title: About Us
+permalink: /about-us
+description: Expandia are Sam Squire and Grace Eley. A left-brain, right-brain team who also happen to be in love.
+---
+<div class="hero about-page__hero">
+	<div class="about-page__hero-content">
+		<h5 class="global__sub">A little more</h5>
+		<h3 class="global__title">{{ page.title }}</h3>
+		{% for about in site.about %}
+			<p class="about-page__body">{{ about }}</p>
+		{% endfor %}
+	</div>
+</div>
+<div class="hero__bg"></div>
+
+<div class="about-staff">
+	<div class="staff staff--sam">
+		<div class="staff__left">
+			<div class="staff__left-container">
+				<h5 class="global__sub">Founder</h5>
+				<h3 class="global__title">Sam Squire</h3>
+				<p class="staff__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aliquid quasi explicabo odit sed voluptatem quos nulla quam natus, placeat consequatur, consequuntur odio repellat eligendi autem et amet in enim.</p>
+			</div>
+		</div>
+		<div class="staff__right">
+			<img src="{{ site.url }}/img/dist/expandia__sam-squire.png" alt="Expandia - Staff member, Sam Squire" class="staff__img">
+		</div>
+	</div>
+
+	<div class="staff staff--grace">
+		<div class="staff__left">
+			<div class="staff__left-container">
+				<h5 class="global__sub">Marketing Exec</h5>
+				<h3 class="global__title">Grace Eley</h3>
+				<p class="staff__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aliquid quasi explicabo odit sed voluptatem quos nulla quam natus, placeat consequatur, consequuntur odio repellat eligendi autem et amet in enim.</p>
+			</div>
+		</div>
+		<div class="staff__right">
+			<img src="{{ site.url }}/img/dist/expandia__grace-eley.png" alt="Expandia - Staff member, Grace Eley" class="staff__img">
+		</div>
+	</div>
+
+</div>

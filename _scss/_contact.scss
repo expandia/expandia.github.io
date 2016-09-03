@@ -1,0 +1,99 @@
+// ---------------------
+// Layout
+// ---------------------
+.contact-page__hero {
+    padding: 10rem 5%;
+
+    @include b(s) {
+        padding: 4rem 5%;
+    }
+}
+.contact-page__hero-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    @include b(s) {
+        flex-direction: column;
+    }
+}
+.contact-page__left {
+    padding: 4rem 5rem 4rem 4rem;
+
+    border-top-left-radius: em(5px);
+    border-bottom-left-radius: em(5px);
+    background-color: $color__blue;
+    box-shadow: $shadow__t-b;
+
+    @include b(s) {
+        width: 100%;
+
+        border-top-right-radius: em(5px);
+        border-bottom-left-radius: 0;
+    }
+}
+.contact-page__right {
+    box-shadow: $shadow__t-b;
+
+    @include b(s) {
+        width: 100%;
+
+        box-shadow: $shadow__b;
+    }
+}
+// ---------------------
+// Text
+// ---------------------
+.contact-page__link {
+    display: block;
+}
+// ---------------------
+// Form
+// ---------------------
+.contact-page__form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8rem 5rem 6rem 5rem;
+
+    border-radius: em(5px);
+    background-color: $color__white;
+
+    align-items: flex-start;
+    @include b(m) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: em(5px);
+        border-bottom-left-radius: em(5px);
+    }
+}
+.contact-page__form-title {
+    margin-bottom: 2rem;
+
+    color: $color__black;
+}
+.contact-page__input {
+    margin-bottom: 1rem;
+    padding: em(7px) em(16px) em(7px) 0;
+
+    border: none;
+    border-bottom: 2px solid $color__black;
+    background-color: transparent;
+    &:-webkit-autofill {
+        background-color: $color__primary !important;
+        -webkit-box-shadow: 0 0 0 1000px $color__primary inset;
+    }
+}
+.contact-page__submit {
+    font-weight: 700;
+
+    margin-top: 2rem;
+    padding: .5rem 1.5rem;
+
+    text-transform: uppercase;
+
+    color: $color__primary;
+    border: none;
+    border-radius: em(100px);
+    background-color: $color__black;
+}

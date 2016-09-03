@@ -1,0 +1,132 @@
+// ---------------------
+// Layout
+// ---------------------
+.side-menu {
+    position: absolute;
+    z-index: 998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: $color__black;
+}
+.side-menu__logo {
+    display: block;
+
+    max-width: 15rem;
+    max-height: 4rem;
+    margin: 3rem auto;
+}
+
+// ---------------------
+// Text
+// ---------------------
+.side-menu__link {
+    display: block;
+
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    max-width: 10rem;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    color: $color__primary;
+}
+
+// ---------------------
+// Menu Icon
+// ---------------------
+.menu-icon__container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+
+    display: block;
+
+    width: em(25px);
+    height: em(25px);
+    margin-top: -25px;
+    margin-left: -25px;
+
+    cursor: pointer;
+    transform: translateY(50%);
+}
+.menu-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: em(18px);
+    height: em(3px);
+    margin-top: -2px;
+    margin-left: -15px;
+
+    transition: background-color .2s ease-out;
+
+    background-color: $color__primary;
+}
+.menu-icon:after,
+.menu-icon:before {
+    position: absolute;
+    left: 0;
+
+    display: block;
+
+    width: em(18px);
+    height: em(3px);
+
+    content: '';
+    transition: all .2s ease-out;
+
+    background-color: $color__primary;
+}
+.menu-icon:after {
+    top: 5px;
+}
+.menu-icon:before {
+    top: -5px;
+}
+
+// ---------------------
+// The Cross
+// ---------------------
+.menu-icon.transformed {
+    position: absolute;
+    z-index: 999;
+
+    background-color: transparent;
+}
+.menu-icon__container.transformed {
+    position: absolute;
+    z-index: 999;
+    right: 5%;
+
+    width: 2.15rem;
+}
+.menu-icon.transformed::after,
+.menu-icon.transformed::before {
+    top: 0;
+    left: 2px;
+
+    width: 18px;
+
+    transition: all .15s ease-out;
+    transform-origin: 50% 50%;
+}
+.menu-icon.transformed::after {
+    transform: rotate(45deg);
+}
+.menu-icon.transformed::before {
+    transform: rotate(-45deg);
+}

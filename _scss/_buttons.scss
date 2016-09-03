@@ -1,0 +1,21 @@
+.button--primary,
+.form__submit {
+    font-family: $button--font-family;
+    font-size: $button--font-size;
+    font-weight: $button--font-weight;
+    line-height: $button--line-height;
+
+    display: block;
+
+    padding: $button--padding;
+
+    letter-spacing: $button--letter-spacing;
+    text-transform: $button--font-capitalisation;
+
+    color: $button--text-color;
+    border: $button--border;
+    border-radius: $button--border-radius;
+    background: $button__background-color;
+
+    -webkit-appearance: none;
+}

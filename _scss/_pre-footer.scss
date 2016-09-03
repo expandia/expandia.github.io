@@ -1,0 +1,133 @@
+// ---------------------
+// Layout
+// ---------------------
+.pre-footer {
+    display: flex;
+
+    padding: 4rem;
+
+    background-color: $color__primary;
+
+    @include oversized;
+    align-items: center;
+    justify-content: center;
+    @include b(m) {
+        flex-direction: column;
+    }
+}
+.pre-footer__left {
+    width: 30%;
+
+    @include b(m) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+.pre-footer__right {
+    display: flex;
+
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
+    @include b(m) {
+        width: 100%;
+    }
+}
+// ---------------------
+// Text
+// ---------------------
+.pre-footer__title {
+    max-width: em(227px);
+
+    color: $color__black;
+
+    @include b(m) {
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+.pre-footer__body {
+    font-weight: 300;
+
+    max-width: em(230px);
+
+    color: $color__black;
+
+    @include b(m) {
+        display: block;
+
+        max-width: em(250px);
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+// ---------------------
+// Form
+// ---------------------
+.pre-footer__form {
+    padding: em(12px) em(15px);
+
+    border-radius: 100px 100px 100px 100px;
+    background-color: #dbdbdb;
+
+    @include b(s) {
+        border-radius: 1rem;
+    }
+}
+.pre-footer__form-field {
+    font-family: $text__family--serif;
+
+    margin-right: .5rem;
+    padding: em(7px) em(16px);
+
+    color: $color__black;
+    border: none;
+    border-radius: 100px;
+    background: #e7e7e7;
+
+    @include lh(11);
+    @include b(s) {
+        display: block;
+
+        width: 100%;
+        margin-right: auto;
+        margin-bottom: .5rem;
+        margin-left: auto;
+
+        text-align: center;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+.pre-footer__form-field--submit {
+    font-weight: 700;
+
+    padding: em(7px) em(16px);
+
+    text-transform: uppercase;
+
+    color: $color__primary;
+    border: none;
+    border-radius: 100px;
+    background-color: $color__highlight;
+
+    @include lh(11);
+    @include b(s) {
+        display: block;
+
+        width: 100%;
+        margin-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}

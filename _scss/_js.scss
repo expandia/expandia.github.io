@@ -1,0 +1,176 @@
+// --------------------------------------------------------------------------------
+// Home - Work Section
+// ---------------------
+.hidden {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+.bounceOutLeft {
+	animation-name: bounceOutLeft;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.bounceOutRight {
+	animation-name: bounceOutRight;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.bounceInLeft {
+	animation-name: bounceInLeft;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.bounceInRight {
+	animation-name: bounceInRight;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes bounceInLeft {
+	from, 60%, 75%, 90%, to {
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	0% {
+		opacity: 0;
+		transform: translate3d(-3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(25px, 0, 0);
+	}
+
+	75% {
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	90% {
+		transform: translate3d(5px, 0, 0);
+	}
+
+	to {
+		transform: none;
+	}
+}
+@keyframes bounceInRight {
+	from, 60%, 75%, 90%, to {
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	from {
+		opacity: 0;
+		transform: translate3d(3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(-25px, 0, 0);
+	}
+
+	75% {
+		transform: translate3d(10px, 0, 0);
+	}
+
+	90% {
+		transform: translate3d(-5px, 0, 0);
+	}
+
+	to {
+		transform: none;
+	}
+}
+
+@keyframes bounceOutLeft {
+	20% {
+		opacity: 1;
+		transform: translate3d(20px, 0, 0);
+	}
+	
+	to {
+		opacity: 0;
+		transform: translate3d(-2000px, 0, 0);
+	}
+}	
+
+@keyframes bounceOutRight {
+	20% {
+		opacity: 1;
+		transform: translate3d(-20px, 0, 0);
+	}
+	
+	to {
+		opacity: 0;
+		transform: translate3d(2000px, 0, 0);
+	}
+}	
+
+
+
+// --------------------------------------------------------------------------------
+// Web Design & Development - Accordion
+// ---------------------
+.closed {
+	display: none;
+	opacity: 0;
+	animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+.open {
+	display: block;
+	opacity: 1;
+	animation: accordionIn 0.45s normal ease-in-out both 1; 
+}
+@keyframes accordionIn {
+	0% {
+		opacity: 0;
+		transform:scale(0.9) rotateX(-60deg);
+		transform-origin: 50% 0;
+	}
+	100% {
+		opacity:1;
+		transform:scale(1);
+	}
+}
+@keyframes accordionOut {
+	0% {
+		opacity: 1;
+		transform:scale(1);
+	}
+	100% {
+		opacity:0;
+		transform:scale(0.9) rotateX(-60deg);
+	}
+}
+
+// --------------------------------------------------------------------------------
+// Instagram Hovers
+// ---------------------
+
+@keyframes instagramSlide {
+	0% {
+		top: 100%;
+	}
+	100% {
+		top: 0%;
+	}
+}
+
+// --------------------------------------------------------------------------------
+// Side Menu
+// ---------------------
+.sideMenuOpen {
+    display: block;
+}
+.entire-site--hidden {
+    display: none;
+}
+.nav__side-menu-opener--opened {
+    position: absolute;
+    z-index: 999;
+    right: 5%;
+}

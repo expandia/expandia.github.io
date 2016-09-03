@@ -1,0 +1,27 @@
+// ---------------------
+// Page
+// ---------------------
+.service-page__service {
+    margin-bottom: 6rem;
+}
+
+// ---------------------
+// Text
+// ---------------------
+.service-page__title {
+    &:after {
+        margin-bottom: 2rem;
+    }
+}
+.service-page__title-count {
+    color: $color__highlight;
+}
+.service-page__body {
+    display: block;
+
+    max-width: em(385px);
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+}

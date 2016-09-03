@@ -1,0 +1,456 @@
+// --------------------------------------------------------------------------------
+// Hero
+// ---------------------
+.hero {
+	display: flex;
+	@include oversized;
+	z-index: 995;
+
+	padding: 17rem 0;
+	@include b(m) {
+		padding: 10rem 0;
+	}
+	@include b(s) {
+		padding: 3rem 0;
+	}
+
+	background: lighten($color__black, 5%) url('/img/dist/expandia__hero-bg--revised.png') no-repeat center center scroll;
+	background-size: cover;
+	box-shadow: $shadow__t-b;
+
+	align-items: center;
+	justify-content: center;
+}
+// ---------------------
+// Text
+// ---------------------
+.hero__sub {
+	margin-bottom: 0.5rem;
+
+	font-family: $text__family--serif;
+	font-weight: 300;
+	color: rgba($color__primary, 0.8);
+	text-align: center;
+}
+
+.hero__title {
+	@include lh(48, 48);
+
+	max-width: em(223px);
+	margin-right: auto;
+	margin-left: auto;
+
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+}
+.hero__message {
+	@include lh(12);
+
+	margin-top: em(6px);
+
+	font-family: $text__family--serif;
+	font-style: italic;
+	color: rgba($color__primary, 0.6);
+	text-align: center;
+}
+// ---------------------
+// Form
+// ---------------------
+.hero__form {
+	padding: em(12px) em(15px);
+
+	background-color: rgba(63,63,63,0.52);
+	border-radius: 100px 100px 100px 100px;
+
+	@include b(s) {
+		border-radius: 1rem;
+	}
+}
+.hero__form-field {
+	@include lh(11);
+
+	padding: em(7px) em(16px);
+
+	background: rgba($color__primary, 0.1);
+	font-family: $text__family--serif;
+	color: $color__primary;
+	border: none;
+	border-radius: 100px;
+
+	@include b(s) {
+		display: block;
+
+		width: 100%;
+		margin-right: auto;
+		margin-bottom: 0.5rem;
+		margin-left: auto;
+
+		text-align: center;
+	}
+}
+.hero__form-field--submit {
+	@include lh(11);
+
+	padding: em(7px) em(16px);
+
+	background-color: $color__highlight;
+	font-weight: 700;
+	color: $color__primary;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 100px;
+
+	@include b(s) {
+		display: block;
+
+		width: 100%;
+		margin-top: 1rem;
+		margin-right: auto;
+		margin-left: auto;
+
+		text-align: center;
+	}
+}
+// --------------------------------------------------------------------------------
+// What We Do - Text
+// ---------------------
+.wwd {
+	padding: em(80px);
+	@include b(s) {
+		padding: 4rem;
+	}
+}
+.wwd__title {
+	@include lh(17,20);
+
+	max-width: 14rem;
+	margin-top: 0.5rem;
+	@include b(m) {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.wwd__body {
+	max-width: 18rem;
+	@include b(m) {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.wwd__more {
+	@include b(m) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+// ---------------------
+// Layout
+// ---------------------
+.wwd__container {
+	display: flex;
+
+	max-width: 61rem;
+	margin-right: auto;
+	margin-left: auto;
+
+	align-items: flex-start;
+	justify-content: center;
+
+	@include b(m) {
+		display: block;
+	}
+}
+.wwd__column {
+	width: 33%;
+	margin-right: 2rem;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	@include b(m) {
+		display: block;
+
+		width: 100%;
+		max-width: 20rem;
+		margin-right: auto;
+		margin-bottom: 4rem;
+		margin-left: auto;
+		&:last-of-type {
+			margin-right: auto;
+		}
+	}
+}
+
+// --------------------------------------------------------------------------------
+// WWD Text Text
+// ---------------------
+
+
+// --------------------------------------------------------------------------------
+// Work Layout
+// ---------------------
+.work__container {
+	display: flex;
+	@include oversized;
+
+	margin-right: auto;
+	margin-left: auto;
+
+	align-items: center;
+	justify-content: flex-start;
+	@include b(m) {
+		flex-wrap: wrap;
+	}
+}
+// --------------------------------------------------------------------------------
+// Left
+// ---------------------
+.work__left {
+	height: 32rem;
+	width: 41%;
+	@include b(m) {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3rem 0;
+		height: auto;
+	}
+
+	background-color: $color__blue;
+	box-shadow: $shadow__t-b;
+}
+.work__left-container {
+	overflow: hidden;
+	position: relative;
+	height: em(230px);
+	padding-left: em(90px);
+	width: calc(100% + 90px);
+	z-index: 999;
+	top: 50%;
+    transform: translateY(-50%);
+    @include b(m) {
+    	width: 100%;
+    	overflow: visible;
+    	padding-left: 0;
+    	top: 0;
+    	transform: translateY(0);
+    }
+}
+.work__left-container-looped {
+	position: absolute;
+	@include b(m) {
+		width: 100%;
+	}
+}
+.work__img {
+	height: em(230px);
+	width: em(400px);
+	
+	@include b(m) {
+		position: static;
+		display: block;
+		margin: auto;
+		transform: translateY(0);
+	}
+	@include b(s) {
+		width: 80%;
+	}
+}
+
+// --------------------------------------------------------------------------------
+// Right
+// ---------------------
+.work__right {
+	height: 28rem;
+	width: 60%;
+	@include b(m) {
+		width: 100%;
+		box-shadow: none;
+		flex-direction: column-reverse;
+		padding-top: 0;
+		height: 25rem;
+	}
+
+	background-color: $color__primary;
+	box-shadow: $shadow__t-b;
+
+	overflow: hidden;
+	position: relative;
+}
+.work__right-container {
+	padding-left: 5rem;
+	@include b(m) {
+		padding-left: 0;
+	}
+}
+.work__right--looped {
+	padding: 4.5rem;
+	@include b(m) {
+		padding: 6rem 5% 3rem 5%
+	}
+	width: 100%;
+	position: absolute;
+	top: 5%;
+}
+
+// --------------------------------------------------------------------------------
+// Work Text
+// ---------------------
+.work__title {
+	margin-top: 2rem;
+
+	color: $color__black;
+	@include b(m) {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.work__categories-container {
+	display: block;
+	@include b(m) {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+.work__category {
+	display: inline;
+
+	font-family: $text__family--serif;
+	font-style: italic;
+	color: $color__black;
+
+	&:after {
+		content: " |";
+	}
+
+	&:last-of-type {
+		&:after {
+			content: "";
+		}
+	}
+
+}
+.work__description {
+	max-width: em(300px);
+	margin-top: 1rem;
+
+	color: $color__black;
+	@include b(m) {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.work__more {
+	color: $color__black;
+	@include b(m) {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+// --------------------------------------------------------------------------------
+// Work Controls
+// ---------------------
+.work__controls-container {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	
+	width: 100%;
+
+	background-color: $color__primary;
+
+	border-top: 1px solid lighten($color__black,30%);
+	@include b(m) {
+		border-bottom: 1px solid lighten($color__black,30%);
+		top: 0;
+		bottom: auto;
+	}
+}
+.work__control {
+	width: 50%;
+	padding: 1rem 0;
+
+	cursor: pointer;
+
+	&--prev {
+		border-right: 1px solid lighten($color__black,30%);
+	}
+}
+.work__control-body {
+	color: $color__black;
+	text-align: center;
+	text-transform: uppercase;
+}
+.work__control-body--prev {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row-reverse;
+}
+.work__control-body--next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.work__control-body--prev__after {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-right: 0.5rem;
+	transform: rotate(180deg);
+	margin-bottom: em(2px);
+}
+.work__control-body--next__after {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-left: 0.5rem;
+	margin-bottom: em(2px);
+}
+// --------------------------------------------------------------------------------
+// About Us
+// ---------------------
+.about {
+	position: relative;
+
+	height: em(544px);
+	@include b(m) {
+		height: auto;
+	}
+
+	background: url('/img/dist/expandia__about-img.png') no-repeat center center scroll;
+	background-size: cover;
+}
+.about__container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translateY(-50%);
+	@include b(m) {
+		padding: 5rem 5%;
+		position: static;
+		transform: translateY(0);
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 30rem;
+	}
+}
+.about__body {
+	max-width: 25rem;
+
+	text-align: left;
+}

@@ -1,0 +1,203 @@
+// --------------------------------------------------------------------------------
+// Page
+// ---------------------
+.work-page__top-container {
+    display: flex;
+
+    padding: 3rem 0;
+
+    align-items: center;
+    justify-content: center;
+    @include b(m) {
+        flex-direction: column-reverse;
+    }
+}
+// ---------------------
+// Left
+// ---------------------
+.work-page__left {
+    display: flex;
+
+    width: 50%;
+    padding-right: 1rem;
+
+    justify-content: flex-end;
+    @include b(m) {
+        width: 100%;
+    }
+}
+.work-page__img {
+    width: auto;
+    max-height: 14rem;
+
+    @include b(m) {
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+// ---------------------
+// Right
+// ---------------------
+.work-page__right {
+    width: 50%;
+    padding-left: 1rem;
+
+    @include b(m) {
+        width: 100%;
+    }
+}
+// ---------------------
+// Text
+// ---------------------
+.work-page__title {
+    max-width: 20rem;
+
+    @include lh(40,40);
+    @include b(m) {
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+.work-page__description {
+    display: block;
+
+    max-width: 35rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    @include b(m) {
+        padding: 0 10%;
+    }
+}
+// ---------------------
+// Categories
+// ---------------------
+.work-page__categories-container {
+    margin-bottom: .2rem;
+
+    @include b(m) {
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+.work-page__category {
+    font-family: $text__family--serif;
+    font-style: italic;
+
+    display: inline;
+
+    color: $color__primary;
+    &:after {
+        content: ' |';
+    }
+    &:last-of-type {
+        &:after {
+            content: '';
+        }
+    }
+}
+
+.work-page__description-container {
+    margin-bottom: 8rem;
+}
+
+
+// --------------------------------------------------------------------------------
+// Loop
+// ---------------------
+
+.study {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    @include b(m) {
+        flex-direction: column;
+    }
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        @include b(m) {
+            flex-direction: column;
+        }
+        .study__right-title {
+            text-align: right;
+
+            @include b(m) {
+                text-align: center;
+            }
+        }
+        .study__right-body {
+            text-align: right;
+
+            @include b(m) {
+                text-align: center;
+            }
+        }
+    }
+}
+// ---------------------
+// Left
+// ---------------------
+.study__left {
+    display: flex;
+
+    width: 50%;
+    min-height: em(512px);
+
+    background-color: $color__blue;
+
+    @include b(m) {
+        width: 100%;
+        min-height: auto;
+        padding: 1rem;
+    }
+    align-items: center;
+    justify-content: center;
+}
+.study__left-img {
+    max-width: 25rem;
+
+    @include b(m) {
+        max-width: 100%;
+    }
+}
+// ---------------------
+// Right
+// ---------------------
+.study__right {
+    display: flex;
+
+    width: 50%;
+
+    @include b(m) {
+        width: 100%;
+    }
+    align-items: center;
+    justify-content: center;
+}
+.study__right-container {
+    max-width: em(300px);
+
+    @include b(m) {
+        width: 100%;
+        max-width: em(400px);
+        padding: 3rem 5%;
+    }
+}
+// ---------------------
+// Text
+// ---------------------
+.study__right-body,
+.study__right-title {
+    @include b(m) {
+        text-align: center;
+    }
+}
