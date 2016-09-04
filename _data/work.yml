@@ -110,7 +110,7 @@
   img: expandia__your-project-next
   description: 
   - We're ready to take on our project, today. Whether it's a new website, a redesign, some marketing support or just a quick chat about the web, we'd love to hear from you. 
-  - Why not <a class="work__description bold" href="contact-us/">contact us</a> today to get the ball rolling?
+  - Why not <a class="work__description bold" href="contact-us">contact us</a> today to get the ball rolling?
 
 # - title: Durable
   # categories:
