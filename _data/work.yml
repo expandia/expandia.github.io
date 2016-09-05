@@ -56,31 +56,31 @@
         - This is just one example of a system which adds to a traditional website structure. Systems like this this are not only a breeze for us, they're one of the most fun parts of our job, too!
       img: carrick-johnson-lettings__work-img--3.png
 
-- title: SWARM Agency
-  categories:
-  - Website Design & Development
-  img: swarm-agency-website-expandia-torquay
-  description: The SWARM guys felt the need for a website to showcase their work. We created a simple, clean website with the functionality for SWARM to add, remove, edit and delete their portfolio items at their leisure.
-  studies:
-    -
-      title: Up there with the big boys
-      description:
-        - SWARM Associates are a London based marketing agency so their visual style and approach to their website needed to reflect their position in the marketplace.
-        - By working with SWARM's in-house team, we were able to create a visually stunning website that was simple enough to fit its purpose.
-        - SWARM tend not to work on the web so their needs were fairly simple; "a website to showcase the portfolio that also suits our position in the market". Extending the colour scheme from their logo and using a revised typeface, we hit the nail on the head and delivered a simple, clean website that allowed their portfolio and showreel to flourish.
-      img: swarm-agency__work-img--1.png
-    -
-      title: Dynamic Category Filter
-      description:
-        - SWARM offer a number of different services. These services are reflected in their portfolio by listing each as a category and allowing users to filter the portfolio by category.
-        - The SWARM team can easily set multiple categories on each portfolio item. These categories are then displayed on the front-end and users can click a category to filter by that category.
-      img: swarm-agency__work-img--2.png
-    -
-      title: A Content Management System (CMS) without the pain of a CMS
-      description:
-        - There are many options for managing content online. Here at Expandia, we lean on a bespoke approach each time. There are multiple benefits to this approach. The main one being reduced-clutter and a concise, manageable codebase. Using third party code to achieve something like this can work but it tends to be tough to manage and even more tough to update.
-        - Using a hand-crafted portfolio management system, built on Wordpress, we enabled the SWARM guys to easily login, create, edit and remove portfolio items at their leisure. This approach reduces costs over-time by allowing them to make updates without having to employ a team like us just to make small changes.
-      img: swarm-agency__work-img--3.png
+# - title: SWARM Agency
+  # categories:
+  # - Website Design & Development
+  # img: swarm-agency-website-expandia-torquay
+  # description: The SWARM guys felt the need for a website to showcase their work. We created a simple, clean website with the functionality for SWARM to add, remove, edit and delete their portfolio items at their leisure.
+  # studies:
+    # -
+      # title: Up there with the big boys
+      # description:
+        # - SWARM Associates are a London based marketing agency so their visual style and approach to their website needed to reflect their position in the marketplace.
+        # - By working with SWARM's in-house team, we were able to create a visually stunning website that was simple enough to fit its purpose.
+        # - SWARM tend not to work on the web so their needs were fairly simple; "a website to showcase the portfolio that also suits our position in the market". Extending the colour scheme from their logo and using a revised typeface, we hit the nail on the head and delivered a simple, clean website that allowed their portfolio and showreel to flourish.
+      # img: swarm-agency__work-img--1.png
+    # -
+      # title: Dynamic Category Filter
+      # description:
+        # - SWARM offer a number of different services. These services are reflected in their portfolio by listing each as a category and allowing users to filter the portfolio by category.
+        # - The SWARM team can easily set multiple categories on each portfolio item. These categories are then displayed on the front-end and users can click a category to filter by that category.
+      # img: swarm-agency__work-img--2.png
+    # -
+      # title: A Content Management System (CMS) without the pain of a CMS
+      # description:
+        # - There are many options for managing content online. Here at Expandia, we lean on a bespoke approach each time. There are multiple benefits to this approach. The main one being reduced-clutter and a concise, manageable codebase. Using third party code to achieve something like this can work but it tends to be tough to manage and even more tough to update.
+        # - Using a hand-crafted portfolio management system, built on Wordpress, we enabled the SWARM guys to easily login, create, edit and remove portfolio items at their leisure. This approach reduces costs over-time by allowing them to make updates without having to employ a team like us just to make small changes.
+      # img: swarm-agency__work-img--3.png
 
 - title: Moonbabies
   categories:
