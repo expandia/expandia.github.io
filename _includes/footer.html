@@ -40,7 +40,7 @@
 				<div class="footer-right__column footer-right__column--1">
 					<h5 class="footer-right__title">Quick Links</h5>
 					{% for page in site.pages %}
-						{% unless page.url contains "work" or page.url contains "404" or page.url contains "thanks" %}
+						{% unless page.url contains "work" or page.url contains "404" or page.url contains "thanks" or page.title == "Expandia" %}
 							<a class="footer-right__link" href="{{ page.url }}">{{ page.title }}</a>
 						{% endunless %}
 					{% endfor %}
