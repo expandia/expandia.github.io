@@ -11,8 +11,9 @@ title: Expandia
 		<h1 class="hero__title">Succeed Online</h1>
 		<form class="hero__form" accept-charset="UTF-8" action="//getsimpleform.com/messages?form_api_token=68fa37b8ba0e4a3e46aac199db57c090" method="POST">
 			<input type='hidden' name='redirect_to' value='{{ site.url }}/thanks' />
-			<input class="hero__form-field" name="name" type="text" placeholder="Name" />
-			<input class="hero__form-field" name="phoneEmail" type="text" placeholder="Telehone or Email" />
+			<input class="hero__form-field" name="name" type="text" placeholder="Name" required/>
+			<input class="hero__form-field" name="phone" type="tel" placeholder="Telehone" required/>
+			<input class="hero__form-field" name="email" type="email" placeholder="Email"/>
 			<input class="hero__form-field--submit" type="submit" value="Submit" />
 		</form>
 		<p class="hero__message">Fill in the form to get started</p>
