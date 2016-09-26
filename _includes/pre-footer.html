@@ -15,8 +15,9 @@
 	<div class="pre-footer__right">
 		<form class="pre-footer__form" accept-charset="UTF-8" action="//getsimpleform.com/messages?form_api_token=68fa37b8ba0e4a3e46aac199db57c090" method="POST">
 			<input type='hidden' name='redirect_to' value='{{ site.url }}/thanks' />
-			<input class="pre-footer__form-field" type="text" name="name" placeholder="Name">
-			<input class="pre-footer__form-field" type="text" name="phoneEmail" placeholder="Telehone or Email">
+			<input class="pre-footer__form-field" type="text" name="name" placeholder="Name" required>
+			<input class="pre-footer__form-field" type="tel" name="phone" placeholder="Telehone" required>
+			<input class="pre-footer__form-field" type="email" name="email" placeholder="Email">
 			<input class="pre-footer__form-field--submit" type="submit" value="Submit">
 		</form>
 	</div>
