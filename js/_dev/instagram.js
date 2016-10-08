@@ -1,8 +1,8 @@
 jQuery(document).ready(function($){
 	var feed = new Instafeed({
 		get: 'user',
-		userId: '1650944',
-		accessToken: '1650944.e8017a5.ea487e834b4b4879a2aeb1686db66649',
+		userId: '3865913948',
+		accessToken: '3865913948.c7381cf.90b1accea003497db3f3fa844e4bb1da',
 		resolution: 'low_resolution',
 		target: 'instagramFeed',
 		links: false,
