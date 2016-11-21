@@ -1,16 +1,7 @@
-<div class="instagram__feed" id="instagramFeed">
-	<div class="instagram__box">
-		<svg class="instagram__logo">
-			<use xlink:href="#svg-expandia__social-logo--instagram" />
-		</svg>
-		<p class="instagram__body">@expandiaco</p>
-	</div>
-</div>
-
 <div class="pre-footer">
 	<div class="pre-footer__left">
 		<h3 class="pre-footer__title">Ready to make a start?</h3>
-		<p class="pre-footer__body">Fill in the form and we’ll get straight back to you to discuss your project.</p>
+		<p class="pre-footer__body">Fill in the form and we’ll get straight back to you to discuss your {% if page.title == "Startup Package" %}startup package{% else %}project{% endif %}.</p>
 	</div>
 	<div class="pre-footer__right">
 		<form class="pre-footer__form" accept-charset="UTF-8" action="//getsimpleform.com/messages?form_api_token=68fa37b8ba0e4a3e46aac199db57c090" method="POST">
@@ -20,5 +11,14 @@
 			<input class="pre-footer__form-field" type="email" name="email" placeholder="Email">
 			<input class="pre-footer__form-field--submit" type="submit" value="Submit">
 		</form>
+	</div>
+</div>
+
+<div class="instagram__feed" id="instagramFeed">
+	<div class="instagram__box">
+		<svg class="instagram__logo">
+			<use xlink:href="#svg-expandia__social-logo--instagram" />
+		</svg>
+		<p class="instagram__body">@expandiaco</p>
 	</div>
 </div>
