@@ -6,6 +6,10 @@
 	left: 100%;
 	top: 0;
 }
+.visible {
+	display: flex;
+}
+
 .bounceOutLeft {
 	animation-name: bounceOutLeft;
 	animation-duration: 1s;

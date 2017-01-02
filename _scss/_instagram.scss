@@ -5,7 +5,6 @@
     display: flex;
 
     background-color: $color__black;
-    box-shadow: $shadow__t;
 
     @include oversized;
     @include b(m) {

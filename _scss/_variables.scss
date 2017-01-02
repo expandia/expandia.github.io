@@ -1,12 +1,13 @@
 // Colors
 $color__black: #30343F;
 $color__blue: #3D5A80;
-$color__orange: $color__blue;
+$color__orange: #F6A623;
 $color__white: #FAFAFF;
+$color__grey: #E6E6E6;
 
 // Base Colors
 $color__primary: $color__white;
-$color__highlight: $color__orange;
+$color__highlight: $color__blue;
 
 // Base Type
 $base__font-size--raw: 13;
@@ -22,7 +23,7 @@ $site__width: 1024px;
 $gutter__width: 20px;
 
 // Font Families
-$text__family--sans: 'proxima-nova', sans-serif;
+$text__family--sans: 'proxima nova', sans-serif;
 $text__family--serif: 'PT Serif', serif;
 $text__family--base: $text__family--sans;
 $text__headings--family: $text__family--sans;

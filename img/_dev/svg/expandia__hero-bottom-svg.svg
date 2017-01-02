@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="733px" height="44px" viewBox="0 0 733 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-230.000000, -546.000000)">
+            <g id="Group-7" transform="translate(231.000000, 548.000000)">
+                <path d="M0.5,23.5 L730.5,23.5" id="Line" stroke="#E7E7E7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-12" transform="translate(662.000000, 0.000000)">
+                    <g id="Group" stroke="#D4D4D4">
+                        <path d="M15.8465753,0 C11.8382466,0 7.81983562,3.20347826 4.53260274,9.02043478 C1.77928767,13.8930435 0,19.8778261 0,24.2669565 C0,32.9343478 7.10882192,39.9852174 15.8465753,39.9852174 C24.5843288,39.9852174 31.6931507,32.933913 31.6931507,24.2669565 C31.693589,19.8778261 29.9143014,13.8930435 27.1605479,9.02043478 C23.8728767,3.20347826 19.8549041,0 15.8465753,0 Z" id="Path" stroke-width="2.592" fill="#FFFFFF"></path>
+                        <polyline id="Path-2" stroke-width="1.296" stroke-linecap="round" stroke-linejoin="round" points="23.6712329 4.7826087 19.7260274 8.69565217 23.2328767 9.13043478 19.2876712 11.3043478 22.3561644 11.7391304 18.8493151 15.6521739"></polyline>
+                    </g>
+                    <g id="Group-11" transform="translate(9.000000, 15.000000)" fill="#D8D8D8">
+                        <path d="M1.5,3 C2.32842712,3 3,2.32842712 3,1.5 C3,0.671572875 2.32842712,0 1.5,0 C0.671572875,0 0,0.671572875 0,1.5 C0,2.32842712 0.671572875,3 1.5,3 Z" id="Oval-2-Copy"></path>
+                        <path d="M3.5,14 C4.32842712,14 5,13.3284271 5,12.5 C5,11.6715729 4.32842712,11 3.5,11 C2.67157288,11 2,11.6715729 2,12.5 C2,13.3284271 2.67157288,14 3.5,14 Z" id="Oval-2-Copy-2"></path>
+                        <path d="M11.5,7 C12.3284271,7 13,6.32842712 13,5.5 C13,4.67157288 12.3284271,4 11.5,4 C10.6715729,4 10,4.67157288 10,5.5 C10,6.32842712 10.6715729,7 11.5,7 Z" id="Oval-2-Copy-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

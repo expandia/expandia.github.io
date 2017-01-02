@@ -1,0 +1,92 @@
+---
+layout: default
+title: Startup Package
+permalink: /startups
+description: Exclusive offer from Expandia. Our Startup Package - A website, logo and a whole load more for only £999.
+---
+<div class="hero startups__hero">
+	<div class="startups__hero-container">
+		<div class="startups__hero-left">
+			<div class="startups__hero-left-container">
+				<svg class="startups__hero-svg">
+					<use xlink:href="#svg-expandia__hero-svg" />
+				</svg>
+				<h2 class="global__title startups__hero-title">Everything you need to get started in business for <span class="startups__hero-title-span">£999!</span></h2>
+				<h5 class="global__sub startups__hero-sub">A website, logo, social media and digital marketing package plus a whole load more...</h5>
+			</div>
+		</div>
+		<div class="startups__hero-right">
+			<h3 class="startups__hero-form-title">Start your journey...</h3>
+			<form accept-charset="UTF-8" action="//getsimpleform.com/messages?form_api_token=68fa37b8ba0e4a3e46aac199db57c090" method="POST" class="startups__hero-form">
+				<input type='hidden' name='redirect_to' value='{{ site.url }}/thanks' />
+				<input name="Name" type="text" placeholder="Name" class="startups__hero-input" required>
+				<input name="Phone" type="tel" placeholder="Telephone" class="startups__hero-input" required>
+				<input name="Email" type="email" placeholder="Email" class="startups__hero-input" required>
+				<input type="submit" value="Let's Go!" class="startups__hero-submit">
+			</form>
+		</div>
+	</div>
+	<svg class="startups__hero-bottom-svg">
+		<use xlink:href="#svg-expandia__hero-bottom-svg" />
+	</svg>
+</div>
+
+<div class="startups__services" id="services">
+	<h2 class="startups__services-title">What's Included?</h2>
+	{% for service in site.data.startups %}
+		<div class="startups__service {% cycle 'startups__service--odd', 'startups__service--even' %}">
+			<div class="startups__service-left">
+				<div class="startups__service-left-container">
+					<h5 class="startups__service-title">{{ service.title }}</h5>
+					<p class="startups__service-body">{{ service.description }}</p>
+				</div>
+			</div>
+			<div class="startups__service-right">
+				<img src="/img/dist/startups/{{ service.img }}" alt="" class="startups__service-img">
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+<div class="startups__tonnes">
+	<h2 class="startups__tonnes-title">Loads of startups have already chosen us.</h2>
+	<img src="/img/dist/startups/expandia__tonnes.png" alt="" class="startups__tonnes-img">
+	<img src="/img/dist/startups/expandia__startups-client-logos.png" alt="" class="startups__tonnes-client-images">
+</div>
+
+<div class="startups__usp-section">
+	<h3 class="global__title global__title--c startups__usp-title">Why Choose Us?</h3>
+	<div class="startups__usp-container">
+		<div class="startups__usp">
+			<svg class="startups__usp-item-icon">
+				<use xlink:href="#svg-expandia__under-one-roof" />
+			</svg>
+			<h4 class="global__title global__title--c startups__usp-item-title">Everything Under One Roof</h4>
+			<p class="startups__usp-body">Everything you need to get started in business, all under one roof with a single point of contact.</p>
+		</div>
+		<div class="startups__usp">
+			<svg class="startups__usp-item-icon">
+				<use xlink:href="#svg-expandia__payment-terms" />
+			</svg>
+			<h4 class="global__title global__title--c startups__usp-item-title">Easy Payment Terms</h4>
+			<p class="startups__usp-body">A 30% deposit, 30% when your website goes live then 40% thirty-days after!</p>
+		</div>
+		<div class="startups__usp">
+			<svg class="startups__usp-item-icon">
+				<use xlink:href="#svg-expandia__in-house" />
+			</svg>
+			<h4 class="global__title global__title--c startups__usp-item-title">Everything In-House</h4>
+			<p class="startups__usp-body">No third-party code.<br>
+			We exclusively use our own code, designs and everything in-between.</p>
+		</div>
+	</div>
+</div>
+
+<style>
+	.pre-footer {
+		box-shadow: none;
+	}
+	.nav {
+		padding: 1.5rem 5%;
+	}
+</style>

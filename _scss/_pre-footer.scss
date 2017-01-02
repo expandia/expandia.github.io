@@ -9,6 +9,8 @@
     background-color: $color__primary;
 
     @include oversized;
+    box-shadow: $shadow__t;
+    
     align-items: center;
     justify-content: center;
     @include b(m) {
