@@ -1,0 +1,21 @@
+included:
+  - 
+    title: Online Presence Review
+    description: An in depth look at your online presence and where it can be improved.
+    img: expandia__hello-review-img.png
+  -
+    title: Online Presence Fix
+    description: We’ll fix any holes we might find before we make a start.
+    img: expandia__startups-logos.png
+  -
+    title: Social Media
+    description: A setup or review of your Facebook, Twitter, Google + and more. We’ll also link everything together to make posting as easy as possible.
+    img: expandia__startups-social-media.png
+  -
+    title: Content Schedule
+    description: Your new social media schedule will turn posting consistent, valuable information into an easy, weekly task.
+    img: expandia__hello-social-img.png
+  -
+    title: Marketing Strategy
+    description: Using everything we've learned and all the data we've accumulated, we'll design you a brand new, comprehensive digital strategy.
+    img: expandia__startups-strategy.png

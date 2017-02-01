@@ -1,4 +1,50 @@
 // ---------------------
+// Startups Banner
+// ---------------------
+.startups-banner {
+    overflow: hidden;
+
+    padding: 5rem 5%;
+
+    background-color: $color__white;
+    box-shadow: $shadow__t;
+
+    @include oversized;
+}
+.startups-banner__title {
+    text-align: center;
+
+    color: $color__black;
+}
+.startups-banner__body {
+    max-width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    color: $color__black;
+}
+.startups__more {
+    font-weight: bold;
+
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    color: $color__black;
+    text-align: center;
+}
+.startups-banner__img {
+    position: absolute;
+    top: 50%;
+    left: -3.87rem;
+
+    transform: translateY(-50%);
+}
+
+// ---------------------
 // Layout
 // ---------------------
 .pre-footer {
@@ -9,8 +55,6 @@
     background-color: $color__primary;
 
     @include oversized;
-    box-shadow: $shadow__t;
-    
     align-items: center;
     justify-content: center;
     @include b(m) {
@@ -86,6 +130,7 @@
 .pre-footer__form-field {
     font-family: $text__family--serif;
 
+    max-width: 10rem;
     margin-right: .5rem;
     padding: em(7px) em(16px);
 
@@ -93,7 +138,6 @@
     border: none;
     border-radius: 100px;
     background: #e7e7e7;
-    max-width: 10rem;
 
     @include lh(11);
     @include b(s) {

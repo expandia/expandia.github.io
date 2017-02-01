@@ -1,0 +1,52 @@
+usp:
+  - 
+    title: Look Great, Everywhere
+    description: We’ll make sure you look great on your website, social media and the major search engines.
+    icon: look-good
+  - 
+    title: Get More Traffic
+    description: Using your refreshed online presence, we’ll drive more traffic to your website using the tools below.
+    icon: traffic
+  - 
+    title: Convert More Visitors
+    description: By optimising your website we’ll help you convert more visitors into leads or sales.
+    icon: conversions
+
+included:
+  - 
+    title: Website Updates
+    description: Using the data we help you collect, we’ll make informed decisions on how to drive conversion from your website.
+  -
+    title: Online Strategy
+    description: An online strategy that works across social media, your website and the major search engines to drive traffic and increase conversions.
+  -
+    title: Brand Management & Design
+    description: Need a little something designed? We’ve got you covered. Someone to liaise with your print company? That’s us!
+  -
+    title: Social Media
+    description: We make generating content and staying on top of it as easy as can be. We also use social media to drive traffic to your website.
+  -
+    title: Search Engine Optimisation
+    description: We understand that SEO can be confusing and even time-wasting if not done correctly. Leave it to us, it’s what we do!
+  -
+    title: Website Maintenance
+    description: Domains, hosting, email, databases… We’ve got you covered.
+app:
+  - 
+    img: website
+    description: Website Visitors
+  - 
+    img: sales
+    description: Sales & Leads
+  - 
+    img: facebook
+    description: Facebook Likes
+  - 
+    img: twitter
+    description: Twitter Followers
+  - 
+    img: tasks
+    description: Monthly Tasks
+  - 
+    img: invoice
+    description: Your Invoices

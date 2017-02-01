@@ -1,0 +1,419 @@
+// ---------------------
+// Hero
+// ---------------------
+.hello__hero {
+    position: static;
+
+    flex-direction: column;
+
+    width: 100%;
+    padding: 10rem 10%;
+
+    background: #fff !important;
+    box-shadow: none;
+
+    @include b(m) {
+        padding: 13rem 10% 0 10%;
+    }
+}
+.hello__hero-bottom-svg {
+    display: block;
+
+    width: 100%;
+    height: em(40px);
+    margin: 5rem auto 0 auto;
+
+    color: #fff;
+}
+
+.hello__hero-title {
+    font-weight: normal;
+
+    position: relative;
+    z-index: 999;
+
+    display: block;
+
+    max-width: em(317px);
+
+    text-align: center;
+
+    color: $color__black;
+
+    @include lh(62,75);
+}
+.hello__hero-sub {
+    font-weight: normal;
+
+    display: block;
+
+    max-width: 21rem;
+    margin-top: .5rem;
+
+    text-align: center;
+
+    color: $color__black;
+}
+
+.hello__hero-stages {
+    position: relative;
+
+    display: flex;
+
+    width: em(620px);
+    min-height: 14rem;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+.hello__hero-stage {
+    width: 33%;
+    padding: 1rem;
+    &--next {
+        align-self: flex-end;
+    }
+}
+
+.hello__hero-stage-title {
+    font-weight: normal;
+
+    text-align: center;
+
+    color: $color__black;
+}
+.hello__hero-stage-body {
+    max-width: em(180px);
+
+    text-align: center;
+
+    color: $color__black;
+}
+.hello__hero-socials {
+    display: block;
+
+    width: em(93px);
+    height: em(15px);
+    margin: auto;
+
+    color: $color__black;
+}
+.hello__hero-squiggles {
+    position: absolute;
+    z-index: 999;
+    bottom: -2.5rem;
+
+    width: em(416px);
+}
+
+
+// ---------------------
+// Services
+// ---------------------
+.hello__services {
+
+    background-color: white;
+}
+.hello__services-title {
+    font-weight: normal;
+
+    text-align: center;
+
+    color: $color__black;
+    &:after {
+        display: block;
+
+        width: 1.5rem;
+        height: .3rem;
+        margin-top: .8rem;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-left: auto;
+
+        content: '';
+
+        background-color: $color__orange;
+    }
+}
+
+.hello__service {
+    display: flex;
+
+    padding: 1rem 0;
+
+    align-items: center;
+    justify-content: center;
+    @include b(m) {
+        flex-direction: column;
+
+        margin-bottom: 2rem;
+    }
+}
+.hello__service--odd {
+    flex-direction: row-reverse;
+
+    @include b(m) {
+        flex-direction: column;
+    }
+    .hello__service-left {
+        justify-content: flex-start;
+        @include b(m) {
+            justify-content: center;
+        }
+    }
+    .hello__service-right {
+        justify-content: flex-end;
+        @include b(m) {
+            justify-content: center;
+        }
+    }
+}
+
+.hello__service--even {
+    .hello__service-title {
+        text-align: right;
+
+        @include b(m) {
+            text-align: center;
+        }
+    }
+    .hello__service-body {
+        text-align: right;
+
+        @include b(m) {
+            text-align: center;
+        }
+    }
+}
+
+.hello__service-left {
+    display: flex;
+
+    width: 50%;
+    padding: .5rem;
+
+    align-items: center;
+    justify-content: flex-end;
+    @include b(m) {
+        justify-content: center;
+    }
+}
+.hello__service-img {
+    max-width: 15rem;
+}
+
+.hello__service-right {
+    display: flex;
+
+    width: 50%;
+    padding: .5rem;
+
+    align-items: center;
+    justify-content: flex-start;
+    @include b(m) {
+        justify-content: center;
+    }
+}
+.hello__service-title {
+    color: $color__black;
+
+    @include b(m) {
+        text-align: center;
+    }
+}
+.hello__service-body {
+    max-width: em(200px);
+
+    color: $color__black;
+
+    @include b(m) {
+        margin: auto;
+
+        text-align: center;
+    }
+}
+
+// ---------------------
+// Tonnes
+// ---------------------
+.hello__tonnes {
+    padding-bottom: 3rem;
+
+    background-color: white;
+}
+.hello__tonnes-title {
+    font-weight: normal;
+
+    display: block;
+
+    max-width: 23rem;
+    margin: auto;
+
+    text-align: center;
+
+    color: $color__black;
+    color: $color__black;
+    &:after {
+        display: block;
+
+        width: 1.5rem;
+        height: .3rem;
+        margin-top: .8rem;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-left: auto;
+
+        content: '';
+
+        background-color: $color__orange;
+    }
+}
+.hello__tonnes-img {
+    display: block;
+
+    max-width: em(570px);
+    margin: auto;
+
+    @include b(m) {
+        max-width: 70%;
+    }
+    @include b(s) {
+        max-width: 90%;
+    }
+}
+.hello__tonnes-client-images {
+    display: block;
+
+    max-width: 35rem;
+    margin: auto;
+    padding: 1rem 0;
+
+    @include b(m) {
+        max-width: 70%;
+    }
+    @include b(s) {
+        max-width: 90%;
+    }
+}
+
+// ---------------------
+// App
+// ---------------------
+.hello__app {
+    padding: 8rem 10%;
+
+    background-color: white;
+}
+.hello__app-container {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+    @include b(m) {
+        display: block;
+    }
+}
+.hello__app-left {
+    display: flex;
+
+    width: 50%;
+    padding-right: 4rem;
+
+    @include b(m) {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+
+        justify-content: center;
+    }
+    align-items: center;
+    justify-content: flex-end;
+}
+.hello__app-right {
+    width: 50%;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+
+    @include b(m) {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+}
+
+.hello__app-title {
+    font-weight: normal;
+
+    display: block;
+
+    max-width: 23.5rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    color: $color__black;
+    &:after {
+        display: block;
+
+        width: 1.5rem;
+        height: .3rem;
+        margin-top: .8rem;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-left: auto;
+
+        content: '';
+
+        background-color: $color__orange;
+    }
+}
+.hello__app-body {
+    max-width: em(300px);
+
+    color: $color__black;
+
+    @include b(m) {
+        display: block;
+
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+.hello__app-item-container {
+    display: flex;
+
+    max-width: em(290px);
+
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @include b(m) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.hello__app-item {
+    display: flex;
+
+    width: calc(33% - .7rem);
+    margin-right: .7rem;
+    margin-bottom: 1rem;
+
+    color: $color__black;
+
+    align-items: center;
+    justify-content: center;
+}
+.hello__app-item-body {
+    color: $color__black;
+}
+.hello__app-item-img {
+    max-width: em(30px);
+    max-height: em(30px);
+    margin-right: .5rem;
+}

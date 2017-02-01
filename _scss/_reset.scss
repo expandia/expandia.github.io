@@ -45,10 +45,7 @@ address {
     font-style: normal;
 }
 
-svg {
-    fill: $color__primary;
-}
-
+svg,
 svg path,
 svg g {
     fill: currentColor;
