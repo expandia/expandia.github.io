@@ -7,8 +7,8 @@ title: Expandia
 <!-- Hero -->
 <div class="hero">
 	<div class="hero__content">
-		<p class="hero__sub">Everything you need to</p>
-		<h1 class="hero__title">Succeed Online</h1>
+		<p class="hero__sub">We'll be</p>
+		<h1 class="hero__title">Back sooon</h1>
 		<form class="hero__form" accept-charset="UTF-8" action="//getsimpleform.com/messages?form_api_token=68fa37b8ba0e4a3e46aac199db57c090" method="POST">
 			<input type='hidden' name='redirect_to' value='{{ site.url }}/thanks' />
 			<input class="hero__form-field" name="name" type="text" placeholder="Name" required/>
@@ -16,112 +16,5 @@ title: Expandia
 			<input class="hero__form-field" name="email" type="email" placeholder="Email"/>
 			<input class="hero__form-field--submit" type="submit" value="Submit" />
 		</form>
-		<p class="hero__message">Fill in the form and we'll contact you right back.</p>
-	</div>
-</div>
-
-<!-- What We Do -->
-<div class="wwd">
-	<div class="wwd__container">
-		{% for service in site.data.services %}			
-			<div class="wwd__column wwd__column--{{ forloop.index }} linked">
-				{% if service.title == "Digital Marketing" %}
-					<h2 class="wwd__title wwd__title--{{ forloop.index }}">{{ service.title | append: " &amp; Social Media"}}</h2>
-				{% else %}
-					<h2 class="wwd__title wwd__title--{{ forloop.index }}">{{ service.title }}</h2>
-				{% endif %}
-				<p class="wwd__body">{{ service.description }}</p>
-				<a href="{{ site.url }}/our-services/{{ service.slug }}" class="wwd__more more">Find Out More</a>
-				<a href="{{ site.url }}/our-services/{{ service.slug }}" class="linker"></a>
-			</div>
-		{% endfor %}
-	</div>
-</div>
-
-<!-- Work -->
-<div class="work">
-
-	<div class="work__container">
-		<div class="work__left linked">
-			<div class="work__left-container">
-				{% for project in site.data.work %}
-					{% if forloop.index == 1 %}
-						<div class="work__left-container-looped" id="work__left-container-looped--{{ forloop.index }}">
-					{% else %}
-						<div class="work__left-container-looped hidden" id="work__left-container-looped--{{ forloop.index }}">
-					{% endif %}
-							{% if project.img %}
-								<a href="{{ site.url }}/work/{{ project.title | slugify }}">
-									{% include expandia__work-img.svg %}
-								</a>
-							{% endif %}
-						</div>
-				{% endfor %}
-			</div>
-		</div>
-
-		<div class="work__right linked">
-			<div class="work__right-container">
-				{% for project in site.data.work %}
-					{% if forloop.index == 1 %}
-						<div class="work__right--looped" id="work__right--looped--{{ forloop.index }}">
-					{% else %}
-						<div class="work__right--looped hidden" id="work__right--looped--{{ forloop.index }}">
-					{% endif %}
-						{% if project.title %}
-							<h2 class="work__title">{{ project.title }}</h2>
-						{% endif %}
-						
-						{% if project.categories %}
-							<div class="work__categories-container">
-								{% for category in project.categories %}
-									<p class="work__category">{{ category }}</p>
-								{% endfor %}
-							</div>
-						{% endif %}
-	
-						{% if project.description %}
-							{% for p in project.description %}
-								<p class="work__description">{{ p }}</p>
-							{% endfor %}
-						{% endif %}
-	
-						{% if project.title == "Your Project Is Next!" %}
-							<a href="{{ site.url }}/contact-us" class="work__more more">Contact Us Now</a>
-	
-							<a href="{{ site.url }}/contact-us" class="linker"></a>
-						{% else %}
-							<a href="{{ site.url }}/work/{{ project.title | slugify }}" class="work__more more">Read More</a>
-	
-							<a href="{{ site.url }}/work/{{ project.title | slugify }}" class="linker"></a>
-						{% endif %}
-					</div>
-	
-				{% endfor %}
-			</div>
-
-			<div class="work__controls-container">
-				<div class="work__control work__control--prev" id="work__control--prev">
-					<p class="work__control-body work__control-body--prev">Prev</p>
-				</div>
-				<div class="work__control work__control--next" id="work__control--next">
-					<p class="work__control-body work__control-body--next">Next</p>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-</div>
-
-<!-- About -->
-<div class="about">
-	<div class="about__container">
-		<h3>About Us</h3>
-		{% for about in site.about %}
-			<p class="about__body">{{ about }}</p>
-		{% endfor %}
-
-		<a href="{{ site.url }}/about-us" class="about__more more">Read More</a>
 	</div>
 </div>
